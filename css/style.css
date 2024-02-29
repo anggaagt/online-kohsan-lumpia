@@ -173,7 +173,7 @@ body {
   color: var(--primary);
 }
 
-/* Hero Section *
+/* Hero Section */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -185,7 +185,8 @@ body {
   position: relative;
   -webkit-mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
   mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
-}*/
+}
+*/
 
 /* .hero::after {
   content: '';
