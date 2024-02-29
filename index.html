@@ -19,6 +19,42 @@
 
     <!-- My Style -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .heros img {
+        min-height: 10vh;
+        display: flex;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        -webkit-mask-image: linear-gradient(
+          rgba(0, 0, 0, 1) 85%,
+          rgba(0, 0, 0, 0)
+        );
+        mask-image: linear-gradient(rgba(0, 0, 0, 1) 85%, rgba(0, 0, 0, 0));
+      }
+      /* Media Queries */
+      /* Laptop */
+      @media (max-width: 1366px) {
+        .heros img {
+          font-size: 75%;
+        }
+      }
+
+      /* Tablet */
+      @media (max-width: 758px) {
+        .heros img {
+          font-size: 62.5%;
+        }
+      }
+      /* Mobile Phone */
+      @media (max-width: 450px) {
+        .heros img {
+          font-size: 55%;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -29,7 +65,12 @@
     <!-- Navbar end -->
 
     <!-- Hero Section start -->
-    <section class="hero" id="home">
+    <section class="heros" id="home">
+      <img
+        style="object-fit: cover; max-width: 86em"
+        src="img/hero-logo.jpg"
+        alt=""
+      />
       <div class="mask-container">
         <main class="content">
           <h1>Mari Nikmati Secangkir <span>Kopi</span></h1>
@@ -44,12 +85,12 @@
 
     <!-- About Section start -->
     <section id="about" class="about">
-      <h2>Online<span> Kohsan</span> Lumpia</h2>
+      <h2>tekan <span>Masuk Menu</span> untuk memilih!</h2>
 
       <div class="row">
         <div class="content">
           <h3>
-            <a href="menu.html">TEKAN <i data-feather="log-in"></i> TEKAN </a>
+            <a href="menu.html">Masuk Menu</a>
           </h3>
         </div>
       </div>
@@ -62,15 +103,17 @@
         <h3 style="color: black">sosial media</h3>
       </div>
       <div class="socials">
-        <a href="#"><i data-feather="instagram"></i></a>
-        <a href="#"><i data-feather="twitter"></i></a>
-        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="https://www.instagram.com/kohsanlumpia/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <!--<a href="#"><i data-feather="twitter"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a-->
       </div>
 
       <div class="credit">
         <p>
-          Created by <a href="https://www.instagram.com/ash_yla_/">AshYla</a>. |
-          &copy; 2024.
+          Created by <a href="https://www.instagram.com/agtan.id/">AnggaAgt</a>.
+          | &copy; 2024.
         </p>
       </div>
     </footer>
